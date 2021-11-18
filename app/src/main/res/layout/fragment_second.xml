@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="etudiant"
+            type="com.example.etu20.data.model.Etudiant"/>
+    </data>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_marginTop="70dp"
+        android:paddingLeft="10dp"
+        android:background="@drawable/rectangle_edit"
+        android:id="@+id/editId"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/purple_700"
+        android:hint="Matricule"
+        android:text="@={etudiant.matricule}"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editNom"
+        android:paddingLeft="10dp"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:background="@drawable/rectangle_edit"
+        android:ems="10"
+        android:textColorHint="@color/purple_700"
+        android:layout_marginTop="30dp"
+        android:inputType="textPersonName"
+        android:hint="Nom"
+        android:text="@={etudiant.nom}"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editId" />
+
+    <EditText
+        android:id="@+id/editPostnom"
+        android:paddingLeft="10dp"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:background="@drawable/rectangle_edit"
+        android:ems="10"
+        android:textColorHint="@color/purple_700"
+        android:layout_marginTop="30dp"
+        android:inputType="textPersonName"
+        android:hint="Postnom"
+        android:text="@={etudiant.postnom}"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editNom" />
+
+    <EditText
+        android:id="@+id/editPrenom"
+        android:paddingLeft="10dp"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:background="@drawable/rectangle_edit"
+        android:ems="10"
+        android:textColorHint="@color/purple_700"
+        android:layout_marginTop="30dp"
+        android:inputType="textPersonName"
+        android:hint="Prenom"
+        android:text="@={etudiant.prenom}"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editPostnom" />
+
+    <EditText
+        android:id="@+id/editAge"
+        android:paddingLeft="10dp"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:background="@drawable/rectangle_edit"
+        android:ems="10"
+        android:textColorHint="@color/purple_700"
+        android:layout_marginTop="30dp"
+        android:inputType="textPersonName"
+        android:hint="Age"
+        android:text="@={etudiant.age}"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editPrenom" />
+
+    <TextView
+        android:id="@+id/btnDel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:background="@drawable/rectangle"
+        android:text="Supprimer"
+        android:textColor="@android:color/black"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.781"
+        app:layout_constraintStart_toStartOf="@id/btnUpd"
+        app:layout_constraintTop_toBottomOf="@+id/editAge" />
+
+    <TextView
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:background="@drawable/rectangle"
+        android:text="Ajouter"
+        android:textColor="@android:color/black"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.154"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editAge" />
+
+    <TextView
+        android:id="@+id/btnUpd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:background="@drawable/rectangle"
+        android:text="Modifier"
+        android:textColor="@android:color/black"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.404"
+        app:layout_constraintStart_toStartOf="@id/btnAdd"
+        app:layout_constraintTop_toBottomOf="@+id/editAge" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
