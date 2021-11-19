@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Etu20</string>
+    <string name="oui">oui</string>
+    <string name="non">non</string>
 </resources>

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
     <data>
         <variable
             name="etudiant"
             type="com.example.etu20.data.model.Etudiant"/>
     </data>
 <androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -94,13 +94,15 @@
 
     <TextView
         android:id="@+id/btnDel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="109dp"
+        android:layout_height="39dp"
+
+        android:gravity="center"
         android:layout_marginTop="88dp"
         android:background="@drawable/rectangle"
         android:text="Supprimer"
         android:textColor="@android:color/black"
-        android:textSize="25dp"
+        android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.781"
         app:layout_constraintStart_toStartOf="@id/btnUpd"
@@ -108,13 +110,15 @@
 
     <TextView
         android:id="@+id/btnAdd"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="89dp"
+        android:layout_height="39dp"
+
+        android:gravity="center"
         android:layout_marginTop="88dp"
         android:background="@drawable/rectangle"
         android:text="Ajouter"
         android:textColor="@android:color/black"
-        android:textSize="25dp"
+        android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.154"
         app:layout_constraintStart_toStartOf="parent"
@@ -122,13 +126,15 @@
 
     <TextView
         android:id="@+id/btnUpd"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="99dp"
+        android:layout_height="39dp"
+
+        android:gravity="center"
         android:layout_marginTop="88dp"
         android:background="@drawable/rectangle"
         android:text="Modifier"
         android:textColor="@android:color/black"
-        android:textSize="25dp"
+        android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.404"
         app:layout_constraintStart_toStartOf="@id/btnAdd"
